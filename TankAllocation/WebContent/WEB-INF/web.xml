@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>TankAllocation</display-name>
+  
+  <servlet>
+    <servlet-name>UploadFile</servlet-name>
+    <servlet-class>org.study.control.UploadFileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UploadFile</servlet-name>
+    <url-pattern>/uploadFile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Greedy Search</servlet-name>
+    <servlet-class>org.study.control.GreedyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Greedy Search</servlet-name>
+    <url-pattern>/greedySearch</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Tabu Search</servlet-name>
+    <servlet-class>org.study.control.TabuServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tabu Search</servlet-name>
+    <url-pattern>/tabuSearch</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SimulatedAnealing Search</servlet-name>
+    <servlet-class>org.study.control.SimulatedAnealingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SimulatedAnealing Search</servlet-name>
+    <url-pattern>/simulatedAnealingSearch</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SimulatedAnealing JSP</servlet-name>
+    <jsp-file>/SimulatedAnealing.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SimulatedAnealing JSP</servlet-name>
+    <url-pattern>/simulatedAnealing</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Greedy JSP</servlet-name>
+    <jsp-file>/GreedySearch.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Greedy JSP</servlet-name>
+    <url-pattern>/greedy</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Result JSP</servlet-name>
+    <jsp-file>/Result.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Result JSP</servlet-name>
+    <url-pattern>/result</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Tabu JSP</servlet-name>
+    <jsp-file>/TabuSearch.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Tabu JSP</servlet-name>
+    <url-pattern>/tabu</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Search JSP</servlet-name>
+    <jsp-file>/Search.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search JSP</servlet-name>
+    <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+
+
+ <session-config>
+   <session-timeout>
+	30
+   </session-timeout>
+ </session-config>
+</web-app>
